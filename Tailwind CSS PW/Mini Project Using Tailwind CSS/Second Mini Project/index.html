@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>Portfolio</title>
+
+    <!-- add tailwind CDN -> by going to official website of the tailwind css -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+</head>
+
+<!-- add background color by using tailwind css in the body tag -: -->
+<!-- adds custom colors -->
+<body class="bg-[#0A192F]">
+
+    <!-- add padding using px-:horizontal padding, py-:vertical padding -->
+    <header class="px-10 py=5">
+        <!-- use navigation bar where we adds our icons which is stored inside the assets folder -->
+        <!-- used flex box and splits into 3 sections -->
+        
+        <nav class="flex items-center justify-between font-mono text-[#CCD6F6]">
+
+        <!-- 1-: adds logo -: -->
+        <!-- add background color -: -->
+        <div class="bg-[#64FFDA] rounded-lg">
+            <!-- add image -->
+            <img src="./assets/medal.png" class="bg-[#0A192F] border rounded-md 
+            hover:-translate-y-1 hover:-translate-x-1 transition ease-in-out" alt="Medal Image">
+        </div>
+
+
+        <!-- 2-: adds menu items -->
+        <div class="flex gap-5 items-center">
+            <ol class="flex gap-6 text-[#CCD6F6]">
+                <li>
+                    <!-- adds couple of styles as well -->
+                    <!-- if you hover the Contact then it change their color -->
+                    <a href="#contact"><span class="text-[#64FFDA] hover:text-[#CCD6F6]">Contact</span></a>
+                </li>
+
+                <li>
+                    <!-- adds couple of styles as well -->
+                    <!-- if you hover the Contact then it change their color -->
+                    <a href="#contact"><span class="text-[#64FFDA] hover:text-[#CCD6F6]">About</span></a>
+                </li>
+
+                <li>
+                    <!-- adds couple of styles as well -->
+                    <!-- if you hover the Contact then it change their color -->
+                    <a href="#contact"><span class="text-[#64FFDA] hover:text-[#CCD6F6]">Experience</span></a>
+                </li>
+
+                <li>
+                    <!-- adds couple of styles as well -->
+                    <!-- if you hover the Contact then it change their color -->
+                    <a href="#contact"><span class="text-[#64FFDA] hover:text-[#CCD6F6]">Skills</span></a>
+                </li>
+
+                <li>
+                    <!-- adds couple of styles as well -->
+                    <!-- if you hover the Contact then it change their color -->
+                    <a href="#contact"><span class="text-[#64FFDA] hover:text-[#CCD6F6]">College</span></a>
+                </li>
+            </ol>
+
+
+            <!-- 3-: Button -->
+            <button class="py-1 px-5 border-2 rounded border-[#64FFDA] 
+            hover:-translate-y-1 hover:-translate-x-1 transition ease-in-out" alt="Button">Resume</button>
+        </div>
+
+
+    </nav>
+
+    </header>
+
+    <!-- this section contains main content -->
+
+    <!-- h stands for height in tailwind css, #90vh-: 90% of the viewport height, 
+    relative position, margin auto -: mx-auto, flex box -: items goes to center -->
+    <section class="h-[90vh] relative mx-auto flex items-center justify-center">
+
+        <!-- inside them we adds some description -->
+        <!-- w-2/3 -: width occupy 2by3 of the space -->
+        <div class="w-2/3 mx-auto">
+            <p class="text-[#64FFDA] font-medium font-mono">Hi, My Name is</p>
+            <!-- leading space -: it gives some space at the beginning, 
+            text size -: text-6xl, text color -: text-[#CCD6F6]-->
+            <h1 class="font-extrabold leading-[65px] text-6xl text-[#CCD6F6] font-sans">Shivam Shrivastav</h1>
+        
+            <!-- adds padding -> py-: vertical padding, text going to little bigger -->
+            <p class="py-8 text-xl text-[#CCD6F6]">
+                I am Software Engineer At Amazon Compancy, Currently, Specialising in Full Stack Development
+            </p>
+
+
+
+            <!-- adds 1 button and 2 paragraphs by using copy only -->
+            <button class="py-1 px-5 border-2 rounded border-[#64FFDA] 
+            hover:-translate-y-1 hover:-translate-x-1 transition ease-in-out" alt="Button">Resume</button>
+
+            <p class="py-8 text-xl text-[#CCD6F6]">
+                I am Software Engineer At Amazon Compancy, Currently, Specialising in Full Stack Development
+            </p>
+
+            <p class="py-8 text-xl text-[#CCD6F6]">
+                I am Software Engineer At Amazon Compancy, Currently, Specialising in Full Stack Development
+            </p>
+
+
+
+        </div>
+
+
+        <!-- add contact details at the right side of the web page -: -->
+        <!-- its right div -: -->
+        <!-- when scrolls it shoud be fixed and it fixed to the bottom, 
+        justify-end -: goes everythings to the end, right-2 -: gives space on the right side  -->
+        <div class="fixed bottom-20 flex flex-col items-center justify-end right-2 gap-44">
+    
+
+        <!-- add links using anchor tags -: -->
+        <a href="mailto:email@hello.com" class="w-24 rotate-90 text-[#0A192F]">email@hello.com</a>
+    
+    </div>
+    </section>
+    
+</body>
+</html>

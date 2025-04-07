@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>Tailwind CSS</title>
+    
+    <!-- Integrate Tailwind CSS by using Tailwind CDN approach -->
+    <!-- CDN stands for Content Delivery Network it opens this page https://cdn.tailwindcss.com and takes all the pseudo codes -->
+
+    <script src="https://cdn.tailwindcss.com"></script>
+
+
+</head>
+
+
+<!-- for background color writes into the body tag -: -->
+<!-- all the text goes to red like paragraph text -->
+<!-- <body class="bg-blue-300 text-red-900"> -->
+
+
+<!-- or body tag like this -:  -->
+<body>
+
+    <!-- Typography -: -->
+
+    <!-- text-3xl -: it increase the font-size -->
+    <!-- increase weight of the font / change styles of the font -->
+    <!-- <h1 class="text-3xl font-bold font-mono font-serif font-sans">Heloo World!!</h1> -->
+    
+    <!-- for letter spacing -: tracking-widest -->
+    <!-- <h1 class="underline font-bold line-through italic tracking-wide">Jay Shree Ram</h1> -->
+
+
+
+
+    <!-- creates different-differeent types of the div container -->
+
+    <!-- div is used to make a container -->
+    <!-- <div class="container">
+        <h1>Hello World!</h1>
+        <button>Buy Now</button>
+    </div> -->
+
+
+    
+    <!-- using flex property -->
+
+
+
+    <!-- <div class="flex">
+        <h1>Hello World!</h1>
+        <button>Buy Now</button>
+    </div> -->
+
+    <!-- <div class="flex justify-between">
+        <h1>Hello World!</h1>
+        <button>Buy Now</button>
+    </div> -->
+
+    <!-- <div class="flex justify-around">
+        <h1>Hello World!</h1>
+        <button>Buy Now</button>
+    </div> -->
+    
+    <!-- 
+    <div class="flex justify-evenly">
+        <h1>Hello World!</h1>
+        <button>Buy Now</button>
+    </div> -->
+
+
+    <!-- Some grid property -: -->
+
+
+    <!-- by using this "grid-cols-3" this paragraph is changed in three cols and in b/w these 5 gaps are happend / it increase the space b/w the content -->
+
+    <!-- <div class="grid grid-cols-3 gap-5">
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Placeat eum velit laudantim illum dolores consequatur eaque aperiarepudiandae.</p>
+
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Placeat eum velit laudantlum dolorejkh jh ventore voluptatum assu. </p>
+
+        <p>Lorem ipsum dolor, sit elit laudam illum dolores consequatur eaque aperiam teuae, illo iquidelit laudam illum dolores consequatur eaque aperiam teuae, illo iquidm illum dolores consequatur eaque apediandae.</p>
+
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Placeat eum velit laudantiu consequatur eaque aperiam teores rem modi voluptatibus repudiandae.</p>
+
+        <p>Lorem ipsum dolor, sit elit laudam illum dolores consequatur eaque aperiam teuae, illo iquidamet consectetur adipisicing elit. Placeat eum velit laudam illum dolores consequatur eaque aperiam teuae, illo iquid tedae.</p>
+    </div> -->
+
+
+
+    <!-- used spacing property -: -->
+
+    <!-- after using m-4 paragraphs moves to the right, m=margin, p=padding, mx and my is also used, x-horizontal, y-vertical -->
+
+    <!-- for vertical padding -> used my-2 at a time only you can used one -->
+
+    <!-- used px-4, py-4, px=padding horizontal, py=padding vertical -->
+
+    <!-- used combination of those also -> m,p,mx,my,px,py etc.  -->
+
+    <!-- <h1>Hello World!</h1>
+    <p class="m-4 p-5 my-2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga est porro accusamus eveniet aut fugiat minima voluptate voluptates ut. Consequuntur libero doloribus porro beatae quisquam, cumque nesciunt debitis vitae qui.</p> -->
+
+
+    <!-- this heading colors is blue -->
+    <h1 class="text-blue-800">Hello World!</h1>
+
+
+    <!-- it gives us border with yellow color -: -->
+    <!-- border looks like dotted -->
+    <p class="my-4 px-6 border-2 border-yellow-600 border-dotted">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Inventore quisquam temporibus autem, cum voluptas perferendis voluptatum voluptates illo? Eius quis perferendis tempora corrupti natus veritatis fuga, dolor mollitia. Nam, laudantium!</p>
+
+
+    <!-- some styles add on the button // apply some transitions -->
+
+    <!-- m-margin, py-vertical padding, px-horizontal padding, border property, rounded-md -: round the border for us, some hover effects ex-: hover:translate-y-1 -: move 1% vertically, x-> moves 1% horizontally  -->
+
+    <!-- here we adds some animations -->
+
+    <p>
+        <button class="m-10 py-4 border rounded-md hover:translate-y-1 hover:translate-x-1 transition ease-in-out ">
+            Buy Now
+        </button>
+    </p>
+
+
+    <!-- rotate the paragraphs by 90 degree -: -->
+
+    <p class="py-24 text-center rotate-90">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas non magnam temporibus ut! Est dicta, iure similique voluptatibus quis iusto consectetur quam odio consequatur porro. Dicta architecto velit recusandae corrupti.
+    </p>
+
+
+</body>
+</html>
