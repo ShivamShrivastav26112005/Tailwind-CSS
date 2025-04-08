@@ -1,0 +1,255 @@
+/* Ex of keyframes -: */
+
+
+body{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0px;
+    /* background-color: black; */
+    /* you can change the b-c and seen the loder again -: */
+    /* background-color: red; */
+    background-color: white;
+}
+
+.loder{
+    width: 100px;
+    height: 100px;
+    margin: 20px;
+}
+
+
+#loader1{
+    height: 100px;
+    width: 100px;
+    /* border: 10px solid rgb(235, 144, 144); */
+    border: 10px solid white;
+    border-top: 8px solid blue;
+    border-radius: 50%;
+    /* background-color: red; */
+    animation: spin 2s linear infinite;
+}
+
+@keyframes spin{
+    0%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+}
+
+
+
+#loader2{
+    height: 100px;
+    width: 100px;
+    background-color: rgb(58, 107, 204);
+    border-radius: 50%;
+    margin-left: 20px;
+    animation: pulse 1.5s ease-in-out infinite;
+}
+
+@keyframes pulse {
+    0%{
+        transform: scale(0.8);
+    }
+    50%{
+        transform: scale(1);
+    }
+    100%{
+        transform: scale(0.8);
+    }
+}
+
+
+#loader3{
+    height: 60px;
+    width: 60px;
+    background-color: aqua;
+    border-radius: 50%;
+    margin-left: 20px;
+    animation: bounce 1s ease infinite;
+}
+
+@keyframes bounce{
+    0%, 100%{
+        transform: translateY(0);
+    }
+    50%{
+        transform: translateY(-20px);
+    }
+}
+
+
+#loader4{
+    /* height: 100%; */
+    /* background-color: rgb(215, 140, 27); */
+    display: flex;
+    justify-content: space-around;
+    margin-left: 20px;
+}
+
+#loader4::before, #loader4::after{
+    width: 30px;
+    height: 300px;
+    content: ' ';
+    background-color: brown;
+    margin-left: 20px;
+    animation: stretch 1.2s ease-in-out infinite;
+}
+
+
+#loader4::after{
+    animation-delay: -0.6s;
+}
+@keyframes stretch{
+    0%, 40%, 100%{
+        transform: scaleY(0.4);
+    }
+    20%{
+        transform: scaleY(1);
+    }
+}
+
+
+#loader5{
+    display: flex;
+    justify-content: space-around;
+    margin-left: 70px;
+}
+
+
+#loader5::before, #loader5::after{
+    width: 30px;
+    height: 30px;
+    content: ' ';
+    background-color: rgb(101, 207, 44);
+    border-radius: 50%;
+    margin-left: 10px;
+    animation: dots 1.2s ease-in-out infinite;
+}
+
+/* giving some animation -: */
+#loader5::after{
+    animation-delay: -0.6s;
+}
+
+@keyframes dots{
+    0%, 80%, 100%{
+        transform: scale(0);
+    }
+
+    40%{
+        transform: scale(1);
+    }
+}
+
+
+#loader6{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+
+    border: 35px solid transparent;
+    border-top: 20px solid rgb(206, 20, 82);
+    border-bottom: 20px solid rgb(71, 36, 24);
+    
+
+    margin-left: 30px;
+    animation: circle-fade 1.2s ease-in-out infinite;
+}
+
+
+@keyframes circle-fade{
+    0%, 100%{
+        opacity: 0;
+    }
+    50%{
+        opacity: 1;
+    }
+}
+
+/* use this loders a lots of websites -: */
+
+#loader7{
+    width: 60px;
+    height: 70px;
+    border: 30px solid rgb(64, 163, 225);
+    border-radius: 50%;
+    border-top: 20px solid transparent;
+    animation: dual-ring 1.5s linear infinite;
+
+}
+
+
+@keyframes dual-ring{
+    0%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+}
+
+
+#loader8{
+    width: 70px;
+    height: 70px;
+    margin-left: 30px;
+    background-color: chartreuse;
+    animation: square 1.5s infinite ease-in-out;
+}
+
+
+@keyframes square{
+    0%, 100%{
+        transform: scale(1);
+    }
+    50%{
+        transform: scale(0.5);
+    }
+}
+
+
+
+#loader9{
+    margin-left: 40px;
+    display: flex;
+    justify-content: space-around;
+}
+
+#loader9::before, #loader9::after, #loader9 div{
+    content: '';
+    width: 30px;
+    height: 30px;
+    background-color: darkgreen;
+    border-radius: 50%;
+    animation: roller 1.2s ease-in-out infinite;
+}
+
+/* here, we actually applied animation -: */
+#loader9 div{
+    animation-delay: -0.08s;
+}
+
+
+#loader9::before{
+    animation-delay: -0.15s;
+}
+
+
+/* #loader9::after{
+    animation-delay: -0.25s;
+} */
+
+@keyframes roller{
+    0%{
+        transform: scale(0);
+    }
+    100%{
+        transform: scale(1);
+    }
+}
