@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Task Management App</title>
+
+    <script src="https://cdn.tailwindcss.com"></script>
+
+</head>
+
+<body class="bg-gray-400 font-sans">
+
+
+    <div class="mx-w-4xl bg-white mx-auto p-6 rounded-1g shadow-2xl mt-10">
+        <h1 class="text-center font-bold p-6 text-3xl text-gray-700 mb-6">Task Management</h1>
+
+        <!-- Task Form (static) -->
+        <form class="mb-8">
+            <div class="bg-white-300 grid gap-4">
+                <input input="text" class="bg-green-200 rounded-2xl p-3 border-2 border-gray-900 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-green-500 placeholder:text-black font-bold text-center"placeholder="Task Title Input Box">
+                <textarea class="bg-green-200 p-3 border-2 rounded-3xl focus:outline-none focus:ring-2 mt-2 focus:ring-blue-500 text-center placeholder:text-black font-bold " placeholder="Task Description Input Box"></textarea>
+                <input type="date" class="bg-green-200 p-3 text-center rounded-2xl focus:outline-none mt-2 focus:ring-2 focus:ring-blue-500">
+                <button type="submit" class="w-full py-3 mt-4 bg-blue-500 text-center text-white rounded-2xl hover:gb-blue-500 focus:outline-none focus:ring-2 focus:ring-blue-500">Add Task</button>
+            </div>
+        </form>
+
+
+
+        <!-- Task List -->
+        <div class="space-y-4">
+
+            <!-- Task 1 -->
+            <div class="flex justify-between items-center p-4 bg-gray-50 rounded-1g shadow-md">
+
+                <div>
+                    <h2 class="text-2xl text-gray-800 font-semibold">Task Title 1</h2>
+                    <p class="text-gray-600 text-sm">Task Description 1</p>
+                    <p class="text-gray-600 text-sm">Due: 2025-02-10</p>
+                </div>
+
+                <di class="space-x-2">
+                    <button class="bg-green-400 text-center ml-4 px-4 py-2 text-white hover:bg-green-800 rounded-md focus:outline-none focus:ring-4 focus:ring-blue-500">Completed</button>
+                    <button class="bg-red-300 px-4 py-2 rounded-md text-center text-white hover:bg-red-700 focus:outline-none focus:ring-4 focus:ring-yellow-500">Delete</button>
+                </div>
+
+            </div>
+            
+
+            <!-- Task 2 -->
+            <div class="flex justify-between items-center p-4 bg-gray-50 rounded-1g shadow-md">
+
+                <div>
+                    <h2 class="text-2xl text-gray-800 font-semibold">Task Title 2</h2>
+                    <p class="text-gray-600 text-sm">Task Description 2</p>
+                    <p class="text-gray-600 text-sm">Due: 2025-02-15</p>
+                </div>
+
+                <div class="space-x-2">
+                    <button class="bg-green-400 text-center ml-4 px-4 py-2 text-white hover:bg-green-800 rounded-md focus:outline-none focus:ring-4 focus:ring-blue-500">Completed</button>
+                    <button class="bg-red-300 px-4 py-2 rounded-md text-center text-white hover:bg-red-700 focus:outline-none focus:ring-4 focus:ring-yellow-500">Delete</button>
+                </div>
+
+            </div>
+
+
+            <!-- Task 3 -->
+            <div class="flex justify-between items-center p-4 bg-gray-50 rounded-1g shadow-md">
+
+                <div>
+                    <h2 class="text-2xl text-gray-800 font-semibold">Task Title 3</h2>
+                    <p class="text-gray-600 text-sm">Task Description 3</p>
+                    <p class="text-gray-600 text-sm">Due: 2025-02-20</p>
+                </div>
+
+                <div class="space-x-2">
+                    <button class="bg-green-400 text-center ml-4 px-4 py-2 text-white hover:bg-green-800 rounded-md focus:outline-none focus:ring-4 focus:ring-blue-500">Completed</button>
+                    <button class="bg-red-300 px-4 py-2 rounded-md text-center text-white hover:bg-red-700 focus:outline-none focus:ring-4 focus:ring-yellow-500">Delete</button>
+                </div>
+
+            </div>
+
+
+             <!-- Task 4 -->
+             <div class="flex justify-between items-center p-4 bg-gray-50 rounded-1g shadow-md">
+
+                <div>
+                    <h2 class="text-2xl text-gray-800 font-semibold">Task Title 4</h2>
+                    <p class="text-gray-600 text-sm">Task Description 4</p>
+                    <p class="text-gray-600 text-sm">Due: 2025-02-25</p>
+                </div>
+
+                <div class="space-x-2">
+                    <button class="bg-green-400 text-center ml-4 px-4 py-2 text-white hover:bg-green-800 rounded-md focus:outline-none focus:ring-4 focus:ring-blue-500">Completed</button>
+                    <button class="bg-red-300 px-4 py-2 rounded-md text-center text-white hover:bg-red-700 focus:outline-none focus:ring-4 focus:ring-yellow-500">Delete</button>
+                </div>
+
+            </div>
+
+
+
+             <!-- Task 5 -->
+             <div class="flex justify-between items-center p-4 bg-gray-50 rounded-1g shadow-md">
+
+                <div>
+                    <h2 class="text-2xl text-gray-800 font-semibold">Task Title 5</h2>
+                    <p class="text-gray-600 text-sm">Task Description 5</p>
+                    <p class="text-gray-600 text-sm">Due: 2025-02-30</p>
+                </div>
+
+                <div class="space-x-2">
+                    <button class="bg-green-400 text-center ml-4 px-4 py-2 text-white hover:bg-green-800 rounded-md focus:outline-none focus:ring-4 focus:ring-blue-500">Completed</button>
+                    <button class="bg-red-300 px-4 py-2 rounded-md text-center text-white hover:bg-red-700 focus:outline-none focus:ring-4 focus:ring-yellow-500">Delete</button>
+                </div>
+
+            </div>
+
+            
+        </div>
+    </div>
+
+</body>
+</html>
+
+
+
+
+<!-- text-sm is for small text size. -->
