@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="bg-gray-400 text-gray-900">
+
+    <!-- Header Section -->
+    <header class="bg-white shadow-md py-4">
+        <div class="container mx-auto flex justify-between items-center px-4">
+            <h1 class="text-2xl font-bold">My Portfolio</h1>
+            <nav>
+                <ul class="flex space-x-5">
+                    <li><a href="#About" class="hover: text-blue-500"></a>About</li>
+                    <li><a href="#Skills" class="hover: text-blue-500"></a>Skills</li>
+                    <li><a href="#Projects" class="hover: text-blue-500"></a>Projects</li>
+                    <li><a href="#Contact" class="hover: text-blue-500"></a>Contact</li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+
+
+    <!-- About Section -->
+    <h2 class="text-3xl font-bold text-center mt-5 mb-6">About</h2>
+    <section id="about" class="bg-blue-400 text-white text-center py-20">
+        <h2 class="text-4xl font-bold">Hello, I'm Shivam Shrivastav</h2>
+        <p class="mt-4 text-1g">A passionate web developer creating modern websites.</p>
+    </section>
+
+
+
+
+    <!-- Skills Section -->
+    <section id="skills" class="py-20 container mx-auto px-4">
+        <h2 class="text-3xl font-bold text-center mb-6">Skills</h2>
+        <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
+            <div class="bg-white text-center p-4 shadow-md rounded-lg hover:bg-green-200 hover:font-bold">HTML</div>
+            <div class="bg-white text-center p-4 shadow-md rounded-lg hover:bg-green-200 hover:font-bold">CSS</div>
+            <div class="bg-white text-center p-4 shadow-md rounded-lg hover:bg-green-200 hover:font-bold">Javascript</div>
+            <div class="bg-white text-center p-4 shadow-md rounded-lg hover:bg-green-200 hover:font-bold">Tailwind CSS</div>
+        </div>
+    </section>
+
+
+
+
+
+    <!-- Projects Section -->
+    <section id="projects" class="py-20 bg-pink-200">
+        <h2 class="text-3xl font-bold text-center mb-6">Projects</h2>
+
+        <div class="container mx-auto grid grid-cols-1 md:grid-cols-3 gap-4 px-4">
+
+
+            <div class="bg-white shadow-2xl rounded-3xl overflow-hidden w-100">
+                <img src="https://cdn.pixabay.com/photo/2018/05/08/21/28/html5-3384014_640.png" alt="Project 1" class="w-full h-60 object-cover">
+                <div class="p-6">
+                    <h3 class="text-xl font-bold text-gray-800">Project 1</h3>
+                    <p class="text-gray-500">A brief description of the project showcasing HTML, CSS, and web development.</p>
+                </div>
+            </div>
+            
+
+            <div class="bg-white shadow-2xl rounded-3xl overflow-hidden w-100">
+                <img src="https://cdn.pixabay.com/photo/2021/03/27/06/31/code-6127616_640.png" alt="Project 2" class="w=full h-50 object-cover">
+                <div class="p-4">
+                    <h3 class="text-xl font-bold">Project 2</h3>
+                    <p class="text-gray-400">A breif description of the project.</p>
+                </div>
+            </div>
+
+            <div class="bg-white shadow-2xl rounded-3xl overflow-hidden w-100">
+                <img src="https://cdn.pixabay.com/photo/2018/02/16/10/23/web-3157323_640.jpg" alt="Project 3" class="w=full h-50 object-cover">
+                <div class="p-4">
+                    <h3 class="text-xl font-bold">Project 3</h3>
+                    <p class="text-gray-400">A breif description of the project.</p>
+                </div>
+            </div>
+
+            <div class="bg-white shadow-2xl rounded-3xl overflow-hidden w-100">
+                <img src="https://cdn.pixabay.com/photo/2021/09/13/22/03/code-6622549_640.png" alt="Project 4" class="w=full h-50 object-cover">
+                <div class="p-4">
+                    <h3 class="text-xl font-bold">Project 4</h3>
+                    <p class="text-gray-400">A breif description of the project.</p>
+                </div>
+            </div>
+
+            <div class="bg-white shadow-2xl rounded-3xl overflow-hidden w-100">
+                <img src="https://cdn.pixabay.com/photo/2019/10/03/12/12/programmer-4523101_640.jpg" alt="Project 5" class="w=full h-50 object-cover">
+                <div class="p-4">
+                    <h3 class="text-xl font-bold">Project 5</h3>
+                    <p class="text-gray-400">A breif description of the project.</p>
+                </div>
+            </div>
+
+            <div class="bg-white shadow-2xl rounded-3xl overflow-hidden w-100">
+                <img src="https://cdn.pixabay.com/photo/2018/08/28/11/45/code-3637299_640.jpg" alt="Project 6" class="w=full h-50 object-cover">
+                <div class="p-4">
+                    <h3 class="text-xl font-bold">Project 6</h3>
+                    <p class="text-gray-400">A breif description of the project.</p>
+                </div>
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-20 text-center">
+        <h2 class="text-3xl font-bold">Contact Me</h2>
+        <form class="mt-6 max-w-md mx-auto bg-white p-6 shadow-2xl rounded-2xl">
+            <div class="bg-gray-300 p-4 rounded-2xl w-100 h-50">
+                <input type="text" placeholder="Your Name" class="w-full p-2 shadow-md rounded-2xl mb-4">
+                <input type="email" placeholder="Your email" class="w-full p-2 shadow-md rounded-2xl mb-4">
+                <textarea placeholder="Your Message" class="w-full p-2 border shadow-md rounded-2xl mb-4"></textarea>
+            </div>
+            <button class="bg-blue-500 text-white px-4 py-2 rounded-2xl mt-4">Send</button>
+        </form>
+    </section>
+
+
+
+    <!-- Footer Section -->
+    <footer class="bg-gray-500 text-white text-center py-4">
+        <p>&copy; 2025 My Portfolio. All rights reserved.</p>
+    </footer>
+
+
+</body>
+</html>
+
+
+
+<!-- Notes -:  -->
+
+<!-- 
+    grid-cols-4 → Creates a grid with 4 columns.
+    md: → This applies the style only on medium screens (md) (≥768px) and larger. -->
