@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactive Website</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-100 text-gray-900">
+    
+    <!-- Navbar -->
+    <nav class="bg-blue-600 p-4 shadow-md sticky top-0 z-50">
+        <div class="max-w-7xl mx-auto flex justify-between items-center">
+            <h1 class="text-white text-2xl font-bold">My Large Website</h1>
+            <ul class="flex space-x-6">
+                <li><a href="index.html" class="text-white hover:text-gray-200">Home</a></li>
+                <li><a href="about.html" class="text-white hover:text-gray-200">About</a></li>
+                <li><a href="services.html" class="text-white hover:text-gray-200">Services</a></li>
+                <li><a href="projects.html" class="text-white hover:text-gray-200">Projects</a></li>
+                <li><a href="contact.html" class="text-white hover:text-gray-200">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+    
+    <!-- Hero Section -->
+    <header class="bg-blue-500 text-white text-center py-20">
+        <h2 class="text-5xl font-extrabold">Welcome to My Large Interactive Website</h2>
+        <p class="mt-4 text-lg">Built with HTML, CSS, and Tailwind CSS for interviews.</p>
+    </header>
+    
+    <!-- Services Section -->
+    <section class="max-w-7xl mx-auto py-12 grid grid-cols-1 md:grid-cols-3 gap-8">
+        <div class="p-6 bg-white rounded-lg shadow-md hover:shadow-xl transition">
+            <h3 class="text-xl font-semibold">Web Development</h3>
+            <p class="mt-2 text-gray-600">Modern and fast web development solutions.</p>
+        </div>
+        <div class="p-6 bg-white rounded-lg shadow-md hover:shadow-xl transition">
+            <h3 class="text-xl font-semibold">UI/UX Design</h3>
+            <p class="mt-2 text-gray-600">User-friendly and aesthetically pleasing designs.</p>
+        </div>
+        <div class="p-6 bg-white rounded-lg shadow-md hover:shadow-xl transition">
+            <h3 class="text-xl font-semibold">SEO Optimization</h3>
+            <p class="mt-2 text-gray-600">Helping your site rank higher in search results.</p>
+        </div>
+    </section>
+    
+    <!-- Portfolio Section -->
+    <section class="bg-gray-200 py-12">
+        <div class="max-w-7xl mx-auto text-center">
+            <h2 class="text-3xl font-bold">Our Projects</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mt-8">
+                <div class="p-6 bg-white shadow-lg rounded-lg">
+                    <img src="project1.jpg" class="rounded-md" alt="Project 1">
+                    <p class="text-gray-700 mt-4">E-commerce Website</p>
+                </div>
+                <div class="p-6 bg-white shadow-lg rounded-lg">
+                    <img src="project2.jpg" class="rounded-md" alt="Project 2">
+                    <p class="text-gray-700 mt-4">Corporate Business Site</p>
+                </div>
+                <div class="p-6 bg-white shadow-lg rounded-lg">
+                    <img src="project3.jpg" class="rounded-md" alt="Project 3">
+                    <p class="text-gray-700 mt-4">Personal Portfolio</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Testimonials Section -->
+    <section class="bg-gray-200 py-12">
+        <div class="max-w-7xl mx-auto text-center">
+            <h2 class="text-3xl font-bold">Client Feedback</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mt-8">
+                <div class="p-6 bg-white shadow-lg rounded-lg">
+                    <p class="text-gray-700">"Great service and support! Highly recommend!"</p>
+                    <h3 class="mt-4 text-lg font-semibold">- Alex Johnson</h3>
+                </div>
+                <div class="p-6 bg-white shadow-lg rounded-lg">
+                    <p class="text-gray-700">"Very professional and quick response time!"</p>
+                    <h3 class="mt-4 text-lg font-semibold">- Sarah Lee</h3>
+                </div>
+                <div class="p-6 bg-white shadow-lg rounded-lg">
+                    <p class="text-gray-700">"Excellent quality and design! Would use again!"</p>
+                    <h3 class="mt-4 text-lg font-semibold">- Mark Wilson</h3>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Contact Form -->
+    <section class="bg-gray-200 py-12">
+        <div class="max-w-4xl mx-auto px-4">
+            <h2 class="text-3xl font-bold text-center">Get in Touch</h2>
+            <form class="mt-8 space-y-4">
+                <input type="text" class="w-full p-3 border rounded-lg focus:ring-2 focus:ring-blue-500" placeholder="Your Name">
+                <input type="email" class="w-full p-3 border rounded-lg focus:ring-2 focus:ring-blue-500" placeholder="Your Email">
+                <textarea class="w-full p-3 border rounded-lg focus:ring-2 focus:ring-blue-500" placeholder="Your Message"></textarea>
+                <button type="submit" class="w-full bg-blue-600 text-white py-3 rounded-lg hover:bg-blue-700">Send Message</button>
+            </form>
+        </div>
+    </section>
+    
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white text-center p-6 mt-12">
+        <p>&copy; 2025 My Large Website. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>
